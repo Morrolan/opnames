@@ -53,7 +53,15 @@ def index(style: Style = Style.modern):
  transform:rotate(-4deg);letter-spacing:.2em;font-weight:bold}}
  h1{{font-size:clamp(2rem,9vw,4.5rem);letter-spacing:.08em;margin:.4em 0}}
  a{{color:#c9c08f}}
-</style></head><body><div>
+ .wrap{{max-width:36rem;padding:1.5rem 1rem}}
+ .blurb{{font-size:.95rem;line-height:1.5;color:#c9c3a6;margin:0 0 2rem;
+ border-bottom:1px dashed #5a6450;padding-bottom:1.2rem}}
+</style></head><body><div class="wrap">
+<p class="blurb">Generates code names in the style of British military operations
+and exercises: an obscure single word like modern MOD operations, a racecourse-or-hunt
+name in the Second World War tradition, or an adjective-and-noun training exercise.
+Names of real operations are left out. Pick a style below and hit
+&ldquo;Generate another&rdquo; until one sticks.</p>
 <div class="stamp">OFFICIAL-SENSITIVE</div>
 <p>{c.full.split()[0].upper()}</p><h1>{c.name}</h1>
 <p><a href="/?style={style.value}">Generate another</a></p>
