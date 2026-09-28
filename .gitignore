@@ -30,3 +30,7 @@ htmlcov/
 # Cloudflare tunnel credentials
 .cloudflared/
 *.json.cred
+
+# Local agent notes (never commit)
+AGENTS.md
+agents.md
